@@ -37,6 +37,6 @@ jobs:
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        PYTEST_RESULTS: "${{ steps.run-pytest.outputs.result }}"
+        RUN-PYTEST_RESULTS: "${{ steps.run-pytest.outputs.result }}"
       with:
         runners: run-pytest,
